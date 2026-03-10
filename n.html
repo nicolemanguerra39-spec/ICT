@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Student Webpage</title>
+  <style>
+    body {margin: 0;
+      font-family: "Poppins", Boogalo, sans-serif;
+      background: Lavender url("bg4.jpg") no-repeat center/cover;
+      background-attachment: fixed;
+      color: darkslategray;
+      background-color: bisque;}
+
+    video {width: 80%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      margin-top: 20px;}
+
+    h1, h2, h3, h4, h5 {font-family:"Comic San Serif", cursive, san-serif;
+      text-align: center;
+      margin-bottom: 20px;
+      color:Darkmagenta;
+      text-shadow: 2px 2px 5px lightpink;}
+
+    /* Main Buttons */
+    .main-buttons {display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0; }
+
+    .main-buttons a {padding: 15px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 25px;
+      color: white;
+      border-radius: 28px;
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+      transition: 0.3s;}
+
+    .main-buttons a:hover { transform: scale(1.1); }
+
+    .violet { background: Cornflowerblue; }
+    .blue { background: Mediumpurple; }
+    .pink { background: palevioletred; }
+
+    /* Flashcards */
+    .flashcards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px; }
+
+    .flashcard {
+      background: lightpink;
+      border-radius: 10px;
+      box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
+      text-align: center;
+      overflow: hidden;
+      transition: 0.3s;}
+
+    .flashcard:hover { transform: translateY(-5px); }
+
+    .flashcard img {
+      width: 100%;
+      height: 4s00px;
+      object-fit: cover;}
+
+    .flashcard p {padding: 10px;
+      font-size: 21px;}
+
+    /* TLE sub-buttons */
+    .tle-buttons {display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+      }
+
+    .tle-buttons a {padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+      transition: 0.3s;}
+
+    .tle-buttons a:hover { transform: scale(1.1); }
+
+    .pink-theme { background: lightskyblue; }
+    .blue-theme { background: lightpink; }
+    
+
+    /* TLE Flashcards */
+    .tle-flashcard {display: flex;
+      align-items: center;
+      background: lemonchiffon;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.3);}
+      
+
+    .tle-flashcard img {
+      width: 500px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 14px;
+      margin-right: 15px;}
+
+    .tle-flashcard div {flex: 1; }
+
+    /* AP Buttons */
+    .ap-buttons {display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 15px;
+      max-width: 800px;
+      margin: auto; 
+      backgground-color: Mistyrose;}
+
+    .ap-buttons a { padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      background: papayawhip;
+      color: palevioletred;
+      font-weight: bold;
+      border-radius: 10px;
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+      transition: 0.3s; }
+
+    .ap-buttons a:hover { transform: scale(1.1); }
+
+    section {padding: 50px 20px;
+      background: rgba(255,255,255,0.8);
+      margin: 30px 0;
+      border-radius: 15px; }
+
+
+    footer {text-align: center;
+      background: deeppink;
+      color: Beige;
+      padding: 15px;}
+  </style>  
+</head>
+<body>
+
+  <h1>Welcome to My Page</h1>
+
+  <!-- Main Buttons -->
+  <div class="main-buttons">
+    <a href="#mainpage" class="violet">About Me</a>
+    <a href="#tle" class="blue">TLE-ICT</a>
+    <a href="#ap" class="pink">Araling Panlipunan</a>
+  </div>
+
+  <!-- MAIN PAGE -->
+  <section id="mainpage">
+    <h2>ABOUT ME</h2>
+
+
+    <div class="flashcards">
+    <div class="flashcard">
+    <h2>Hi I'm Nics!</h2> 
+    <p>Hi everyone! 
+                    My full name is Mary Nicole Solano Manguerra, but you can call me Nics 
+                    if you want too. I'm 15 now years old and I was born on October 23, 2010, at 
+                    Romblon Hospital...My parents province.I do love reading fictional books
+                     specially inksteady's books.
+                    I'm in 9th grade now, and the vice president of our class.This school year I joined 
+                    many extra curricular activities such as MVP, streetdance and many more.I do 
+                    love playing vball, but this year I did not join intrams.One more thing is I love to yap.
+        </p>
+        </div>
+
+
+      <div class="flashcard">
+        <img src="me.jpg" alt="me">
+        </div>
+
+
+           
+      
+      <div class="flashcard">
+        <img  src="fam.jpg" alt="fam">
+        </div>
+
+
+        <div class="flashcard">
+        <p>This is my family, I am an only child with lots cousins. I love them, 
+        they always make me feel loved. They always help me in my ups and downs 
+        without even asking. They know me, and we know each other. And now, let's 
+        talk about my parents, my amazing parents. When you see them, they smile 
+        at you, but didn't you know they were tired, they just smile at everyone 
+        and show them that they are okay. Tired or not, they always find a way 
+        for me to have a timw, to have a bonding together. They never get tired 
+        of loving me. I have learned a lot from them, and everything I have learned, 
+        I will use them as my soldiers and my protection. I love them, I take care 
+        of them, and I respect them</p>
+        </div>
+      
+      
+        <div class="flashcard">
+        <img src="fr1.jpg" alt="fr">
+        </div>
+        <div class="flashcard">
+        <p>This are my friends, they always make me feel loved, accepted
+        , and supported. I love being around them because they bring out the
+         best in me, and every moment we share feels special.They always makes me happy.
+         Whenever challenges come our way, we always try to find solutions as soon as possible, 
+         whether it’s about misunderstandings, school tasks, or personal struggles.
+         Their presence reminds me that I am never alone in facing life’s ups and downs.
+         Because of then I learned the true meaning of love and the value of trust, patience, and
+         forgiveness. My friends are my family too, it may not be many, but when it comes to love, respect,
+         and support, we are always together.</p>
+         </div>
+      
+   
+      
+        <div class="flashcard">
+        <img  src="f3.jpg" alt="f3">
+        </div>
+
+<div class="flashcard">
+<video controls>
+<source src="fv.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="flashcard">
+<video controls>
+<source src="tv2.mp4" type="video/mp4">
+</video>
+</div>
+
+
+  </div>
+  </section>
+
+  
+       <!-- TLE-ICT -->
+  <section id="tle">
+  <h2>TLE-ICT CONTENTS</h2>
+  <div class="tle-buttons">
+  <a href="#tle1" class="pink-theme">Outputs</a>
+  <a href="#tle2" class="blue-theme">Activities</a>
+  </div>
+
+  <div id="tle1">
+  <h2>2ND QUARTER OUTPUTS</h2>
+  
+
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="1">
+      <div><h3>INTRODUCTION OF CSS</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>In this lesson I learned about CSS and its importance
+      in creating webpages. Also in this lesson, I learned about the
+      different parts of CSS such as behavior, presentation and 
+      content. Through this, it helps me understand what CSS is 
+      really for and why it is important to be a web developer 
+      and how useful it is.</p></div>
+      </div>
+      
+      
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="2">
+      <div><h3>CSS STYLESHEETS</h3></div>
+      </div>
+      <div class="tle-flashcard">
+        
+        <div><p>is our 2nd lesson for the 2nd quarter, and 
+        I would say that these tags are really important to 
+        determine how elements behave when styled with CSS.
+        In this lesson, we also discussed the basic structure
+        of CSS and its definitions, how stylesheets work, 
+        and the 3 types of Stylesheets.</p></div>
+      
+      </div>
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="3">
+      <div><h3>SPAN & DIV</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>In this Lesson, I learned that the div or span 
+      tag will provide or place a default style on your 
+      webpage. The Div tag helps you divide content into 
+      individual sections. While the span tag is a generic 
+      way of adding structure to an HTML document.</p></div>
+      </div>
+
+      </div>
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="4">
+      <div><h3>CLASSES</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>in this lesson, we discussed the classes that 
+      is used to defined selector.Rhis is more specific, it apply 
+      styles only if the element and class match.For me, this is 
+      very helpful when I use embedded stylesheet.</p></div>
+      </div>
+
+      </div>
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="">
+      <div><h3>ID SELECTOR</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>We discussed about ID selector which is the 
+      universal selector that selects every single HTML element 
+      on the page.And this is very useful and work with classes</p></div>
+      </div>
+
+      </div>
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="4">
+      <div><h3>SETTING DIMENSIONS</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>In this lesson, I have learned that CSS can be used to manage dimensions 
+      to out html such as, visibility, width or height of HTML elements.</p></div>
+      </div>
+
+<h2>3RD QUARTER OUTPUTS</h2>
+  
+
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="1">
+      <div><h3>INTRODUCTION OF CSS</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>In this lesson I learned about CSS and its importance
+      in creating webpages. Also in this lesson, I learned about the
+      different parts of CSS such as behavior, presentation and 
+      content. Through this, it helps me understand what CSS is 
+      really for and why it is important to be a web developer 
+      and how useful it is.</p></div>
+      </div>
+      
+      
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="2">
+      <div><h3>CSS STYLESHEETS</h3></div>
+      </div>
+      <div class="tle-flashcard">
+        
+        <div><p>is our 2nd lesson for the 2nd quarter, and 
+        I would say that these tags are really important to 
+        determine how elements behave when styled with CSS.
+        In this lesson, we also discussed the basic structure
+        of CSS and its definitions, how stylesheets work, 
+        and the 3 types of Stylesheets.</p></div>
+      
+      </div>
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="3">
+      <div><h3>SPAN & DIV</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>In this Lesson, I learned that the div or span 
+      tag will provide or place a default style on your 
+      webpage. The Div tag helps you divide content into 
+      individual sections. While the span tag is a generic 
+      way of adding structure to an HTML document.</p></div>
+      </div>
+
+      </div>
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="4">
+      <div><h3>CLASSES</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>in this lesson, we discussed the classes that 
+      is used to defined selector.Rhis is more specific, it apply 
+      styles only if the element and class match.For me, this is 
+      very helpful when I use embedded stylesheet.</p></div>
+      </div>
+
+      </div>
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="">
+      <div><h3>ID SELECTOR</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>We discussed about ID selector which is the 
+      universal selector that selects every single HTML element 
+      on the page.And this is very useful and work with classes</p></div>
+      </div>
+
+      </div>
+      <div class="tle-flashcard">
+      <img src="l6.jpg" alt="4">
+      <div><h3>SETTING DIMENSIONS</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>In this lesson, I have learned that CSS can be used to manage dimensions 
+      to out html such as, visibility, width or height of HTML elements.</p></div>
+      </div>
+
+
+<h2>4TH QUARTER OUTPUTS</h2>
+  
+
+      <div class="tle-flashcard">
+      <img src="27.jpg" alt="1">
+      <div><h3>INTRODUCTION OF JAVASCRIPT</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>I learned that JavaScript is a programming language used 
+      to make websites interactive and dynamic. It helps developers add features such as buttons, 
+      animations, and responses that improve the user’s experience on a webpage.
+      </p></div>
+      </div>
+      
+      
+      <div class="tle-flashcard">
+      <img src="28.jpg" alt="2">
+      <div><h3>SCRIPTS</h3></div>
+      </div>
+      <div class="tle-flashcard">
+        
+        <div><p>I learned that scripts are sets of instructions 
+        written in JavaScript that tell the browser what actions 
+        to perform. These scripts control how a webpage behaves and allow 
+        it to respond to user actions.</p></div>
+      
+      </div>
+      <div class="tle-flashcard">
+      <img src="29.jpg" alt="3">
+      <div><h3>CHARACTERISTICS OF JAVASCRIPTS</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>I learned that JavaScript is a flexible and lightweight 
+      programming language that runs directly in a web browser. It is 
+      widely used to create interactive features like forms, games, and dynamic content on websites.</p></div>
+      </div>
+
+      </div>
+      <div class="tle-flashcard">
+      <img src="30.jpg" alt="4">
+      <div><h3>EVENTS</h3></div>
+      </div>
+      <div class="tle-flashcard">
+      <div><p>I learned that events are actions that occur on a webpage, 
+      such as clicking a button, pressing a key, or moving the mouse. 
+      JavaScript can detect these events and respond by performing 
+      specific functions or tasks.</p></div>
+      </div>
+
+    
+
+      </div>
+    <div id="tle2">
+
+<h1>2ND QUARTER ACTIVITIES</h1>
+      
+      <h2>BUWAN NG WIKA</h2>
+      <div class="flashcard">
+      <img src="bw1.jpg" alt="bw1">
+      <img src="bw2.jpg" alt="bw2">
+      </div>
+      <div class="tle-flashcard">
+      <p>Events like Buwan ng Wika are important to us Filipinos, 
+      because it is where we celebrate and value our own language. 
+      Here too, we learn a lot from our language and through the 
+      events held in schools, each one shows their being Makabayan. 
+      I didn't get any awards in the contests, but I wholeheartedly 
+      participated in events like quiz bee, declamation and wearing 
+      traditional costumes. In Buwan ng Wika, I learned  to care of 
+      our own language and the patriotism, and respect as a Filipino. 
+      I will teach what I know about our country clearly and engagingly 
+      to my classnates, and I will tell them why it is important and 
+      how our ancestors achieved what we have today. As a student, 
+      I will continue to be proud and use our language with respect, 
+      and teach it to other people who want to learn it.</p>
+      </div>
+      
+   
+      <h2>INTRAMS</h2>
+      <div class="flashcard">
+      <img src="in1.jpg" alt="in1">
+      <img src="in2.jpg" alt="in2">
+      </div>
+<div class="flashcard">
+<video controls>
+<source src="iv.mp4" type="video/mp4">
+</video>
+</div>
+      <div class="tle-flashcard">
+      <p>In this event, the students or the participants will 
+      show their team efforts and their ability in their chosen 
+      sports or games.In this event, I didnt join any games, but 
+      I'm actively participated to every events, like I helped 
+      for organizing our teams uniforms and recruiting players.
+      I have learned that this event is very important in showcasing 
+      their skills in participating in every game and to develop 
+      more their strength.For me, this events will help me in my 
+      everyday life to improve my skills for my improvements.</p>
+      </div>
+      
+      <h2>SCIENCE MONTH</h2>
+      <div class="flashcard">
+      <img src="sc.1.jpg" alt="sc.1">
+      <img src="sc.2.jpg" alt="sc.2">
+      </div>
+      <div class="tle-flashcard">
+      <p>This event shows and celebrate the appreciation to our 
+      inventions and new developments for our world.In this 
+      game everyone participated in colloqiual presentation 
+      to propose their desire studies that will bring a changes 
+      to our lives.What I have learned in this month is very 
+      important to us, not only to celebrate the contribution 
+      of science, but also to us to learn from new things 
+      and incredible discoveries.I will also share my learning 
+      to my classnates about science.I can apply this by taking 
+      care of my self like washing hands, and taking care of my 
+      health.</p>
+      </div>
+      
+      <h2>AP MONTH</h2>
+      <div class="flashcard">
+      <img src="ap2.jpg" alt="ap2">
+      <img src="ap2.jpg" alt="ap2">
+      </div>
+      <div class="tle-flashcard">
+      <p>AP month promotes cultural appreciation, raises awareness 
+      of social issues, and encourages national pride by providing 
+      a platform for students to engage with different cultures and 
+      traditions through various creative activities. I participate 
+      in this celebration by participating in the quiz bee and 
+      wearing traditional or Asian clothing that represents me 
+      as part of the Asian people. I have learned a lot from these 
+      events such as the culture and traditions of Asians, and how 
+      culture and traditions of Asians are discovered. If I were to 
+      teach my classmates, I will explain them with dedication and 
+      pride, so that they will feel that our history is beautiful 
+      and fun. I will be able to apply everything I have learned in 
+      my daily life by applying my studies of economics to my future 
+      business and daily events.</p>
+      </div>
+      
+      <h2>TEACHER'S DAY</h2>
+      <div class="flashcard">
+      <img src="td1.jpg" alt="td1">
+      <img src="td2.jpg" alt="td2">
+      </div>
+<div class="flashcard">
+<video controls>
+<source src="tv.mp4" type="video/mp4">
+</video>
+</div>
+      <div class="tle-flashcard">
+      <p>Teachers day is a very important occasion to appreciate 
+      and recognize the vital role of every teachers in shaping 
+      the students lives for the better future.I participated in 
+      this event with all my heart to show how I appreciate my 
+      teachers and give them the a memorable celebration after 
+      all the hard works they have done to us.In this participation, 
+      I have learned that we should always respect our teachers, 
+      and listen to team always.In real-life world, I can apply 
+      this by simply appreciate people who help us and give them 
+      love and respect.</p>
+      </div>
+  
+      
+    <h1>3RD QUARTER ACTIVITIES</h1>
+      
+      <h2>ENGLISH MONTH</h2>
+      <div class="flashcard">
+      <img src="7.jpg" alt="bw1">
+      <img src="8.jpg" alt="bw2">
+      </div>
+      <div class="tle-flashcard">K
+      <p>English Month reminded me of the power of language and expression. 
+      Participating in different activities encouraged me to improve my 
+      communication skills and boosted my confidence in speaking and writing.
+      I realized that mastering English is not just about grammar, but also 
+      about creativity and the courage to express ideas.
+      </p>
+      </div>
+      
+   
+      <h2>BOOKLANDIA</h2>
+      <div class="flashcard">
+      <img src="9.jpg" alt="in1">
+      <img src="10.jpg" alt="in2">
+      </div>
+<div class="flashcard">
+<video controls>
+<source src="13.mp4" type="video/mp4">
+</video>
+</div>
+      <div class="tle-flashcard">
+      <p>Booklandia was a fun and inspiring experience as I got to portray a 
+      character from a book. It taught me the importance of understanding the 
+      character’s personality and bringing it to life. I also learned that 
+      teamwork and preparation are essential for a successful performance.
+      Meeting other students who love reading as much as I do was an added joy.
+      </p>
+      </div>
+      
+      <h2>VALUES MONTH</h2>
+      <div class="flashcard">
+      <img src="11.jpg" alt="sc.1">
+      <img src="12.jpg" alt="sc.2">
+      </div>
+<div class="flashcard">
+<video controls>
+<source src="14.mp4" type="video/mp4">
+</video>
+</div>
+      <div class="tle-flashcard">
+      <p>Joining the MVP pageant was one of the most memorable experiences this year. 
+      Although I did not win, I learned a lot about confidence, self-presentation, and perseverance. 
+      More importantly, I met new friends and created connections with students I might not have 
+      talked to otherwise. This taught me that participation and learning are more important than winning.</p>
+      </div>
+      
+      <h2>MATH MONTH </h2>
+      <div class="flashcard">
+      <img src="15.jpg" alt="ap2">
+      <img src="16.jpg" alt="ap2">
+      </div>
+      <div class="tle-flashcard">
+      <p>Math Month was challenging but rewarding. Engaging in 
+      problem-solving activities pushed me to think critically 
+      and creatively. I realized the importance of patience and focus, 
+      especially when tackling difficult questions. It also reminded me 
+      that learning can be enjoyable when shared with friends.</p>
+      </div>
+      
+
+      <h1>4TH QUARTER ACTIVITIES</h1>
+
+
+      <h2>MAPEH MONTH</h2>
+      <div class="flashcard">
+      <img src="17.jpg" alt="td1">
+      <img src="18.jpg" alt="td2">
+      </div>
+      <div class="flashcard">
+      <video controls>
+      <source src="21.mp4" type="video/mp4">
+      </video>
+      </div>
+      <div class="tle-flashcard">
+      <p>MAPEH Month celebrated our talents in music, 
+      arts, physical education, and health. It reminded me to balance 
+      academics with creative and physical activities. I appreciated 
+      the effort of everyone who showcased their skills, and it inspired 
+      me to explore my own talents further.
+      </p>
+      </div>
+
+
+      <h2>STEET DANCE</h2>
+      <div class="flashcard">
+      <img src="19.jpg" alt="td1">
+      <img src="20.jpg" alt="td2">
+      </div>
+      <div class="flashcard">
+      <video controls>
+      <source src="22.mp4" type="video/mp4">
+      </video>
+      </div>
+      <div class="tle-flashcard">
+      <p>The Street Dance Competition was exciting and unforgettable. 
+      Winning 4th place was a proud moment for our team, but the 
+      journey itself taught me discipline, teamwork, and resilience. 
+      Practicing together, supporting one another, and performing on 
+      stage strengthened our friendship and taught me that effort and 
+      unity are just as important as the ranking.
+      </p>
+      </div>
+
+      <h2>NOLI ME TANGERE</h2>
+      <div class="flashcard">
+      <img src="23.jpg" alt="td1">
+      <img src="24.jpg" alt="td2">
+      </div>
+      <div class="flashcard">
+      <video controls>
+      <source src="25.mp4" type="video/mp4">
+      </video>
+      </div>
+      <div class="tle-flashcard">
+      <p>Being the wardrobe head for our Noli Me 
+      Tangere classroom play was a unique experience that 
+      taught me responsibility and attention to detail. I learned 
+      how behind-the-scenes work is crucial for the success of a performance. 
+      It also gave me a new appreciation for the efforts of everyone 
+      involved in school productions.
+      </p> 
+      </div>
+
+      
+  <div></div>
+  </section>
+
+  
+  
+  <!-- ARALING PANLIPUNAN -->
+  <section id="ap">
+    <h2>2ND QUARTER ARALING PANLIPUNAN</h2>
+    <div class="ap-buttons">
+      
+      
+      <div class="flashcard">
+      <img src="d.jpg" alt="d">
+      <a href="https://www.canva.com/design/DAG1h5NuPr0/oy6eEtzfhwc0YkIb5raC9A/view?utm_content=DAG1h5NuPr0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbb12ff673d" target="_blank">DEMAND</a>
+      </div>
+      
+      
+      <div class="flashcard">
+      <img src="s.jpg" alt="s">
+      <a href="https://www.canva.com/design/DAG1iMCzrjs/7lFDpTo6gJwoXnyU0vlKCA/view?utm_content=DAG1iMCzrjs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7f9581703c" target="_blank">SUPPLY</a>
+      </div>
+
+
+      <div class="flashcard">
+      <img src="e.jpg" alt="e">
+      <a href="https://www.canva.com/design/DAG1ioFyzJs/ilTsavMP9Hu6OLLlngqxBw/view?utm_content=DAG1ioFyzJs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hda2eaa5974" target="_blank">PRICE ELASTICITY</a>
+      </div>
+
+
+
+      <div class="flashcard">
+      <img src="q.jpg" alt="q">
+      <a href="https://www.canva.com/design/DAG1iJPyWGI/z_C7MFHfdF8oCCGVrC1lSw/view?utm_content=DAG1iJPyWGI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hff8da5e259" target="_blank">MARKET EQUILIBRIUM</a>
+      </div>
+      
+      
+      <div class="flashcard">
+      <img src="m.jpg" alt="m">
+      <a href="https://www.canva.com/design/DAG1dBy_k-c/cYhJ9d-6THYsDZmBfGnZ5A/view" target="_blank">IBA'T IBANG ESTRAKTURA NG PAMILIHAN</a>
+      </div>
+
+      <div class="flashcard">
+      <img src="g.jpg" alt="g">
+      <a href="https://www.canva.com/design/DAG2Dr7PL94/SAPEwUITf8kNoL76xYIEhg/view?utm_content=DAG2Dr7PL94&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6f8f9f6a2d" target="_blank">BAHAGING GINAMPANAN NG PAMAHALAAN SA REGULASYON NG MGA</a>
+      </div>
+      
+ <h2>4TH QUARTER ARALING PANLIPUNAN</h2>
+
+ <div class="flashcard">
+      <img src="1.jpg" alt="d">
+      <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1sQ0HkXfBUu27oqZJZbZGQJGv76ufrOPxF_Dqsy1sq6w%2Fedit%3Fusp%3Ddrivesdk&h=AT7cMWizzp8UUat2-gG5btixYlX7s2AISm7JkfkIE7zBqhcn_pbncf7AuZRSaGbRW4XYS007kE1YQk_YS0lqHKIcV3olsiVODdE53BaeHUFyZDWntGQD3IZZkJhAiZE" target="_blank">PAMBANSANG KAUNLARAN</a>
+      </div>
+      
+      
+      <div class="flashcard">
+      <img src="6.jpg" alt="s">
+      <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1Jmu1bnydNOKO_SPMzXbSl-YayW9d0UPEBSm4GI7ZsYw%2Fedit%3Fusp%3Ddrivesdk&h=AT7ksaHF-85Rm8E1gfd9lDeaCho5fmMNZ6HiPDRRotx2o1Ds7Ddj2ueJWWsMfsgz7lKhcWzZRx_DXnd3IhsEd-UM3wlrYbNjKdH0jccjZt6grKSYbtVM8TItv-2GS3E" target="_blank">AGRIKULTURA</a>
+      </div>
+
+
+      <div class="flashcard">
+      <img src="2.jpg" alt="e">
+      <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1tDRANK4rrfQKCIFUOkyS367WaOhzim8Fehhga_cawk8%2Fedit%3Fusp%3Ddrivesdk&h=AT674rnRBKoQlvXsc_6smyB2ViCJfv44BQwSAo1Ozohw2TVRdYwBQkjPznRpuIIu7CTizr07AV-0cdhojIL5OtxoGAMG5rBMbDrHvL2s5EfN-rz9KatGFOyJ3SvaIN8" target="_blank">SEKTOR NG INDUSTRIYA</a>
+      </div>
+
+
+
+      <div class="flashcard">
+      <img src="3.jpg" alt="q">
+      <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1wN-ZpIDgkDAi6fI8d3bwUqlNHiDUbgaKGXXDLDR9KAo%2Fedit%3Fusp%3Ddrivesdk&h=AT68zGvy-c0fZgKhsud2IZLNsRAido-5pgfEl6pwOaPPDxVbPrfKDzXuvE9BQh3MqkTzNvZ5Dhj47wyMWklYYR3VxwIzpInpcZ-lvnLgYf-cTsrqcMx0U9uy9w7bC8c"_blank">SEKTOR NG PAGGAWA</a>
+      </div>
+      
+      
+      <div class="flashcard">
+      <img src="4.jpg" alt="m">
+      <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1E-Yn92veNeUXT9Vvv_xUOU8msaoX_ypmr7YRE_H78Po%2Fedit%3Fusp%3Ddrivesdk&h=AT4zPRqRu7sYKH131L2J2WtIdMFiXN4kWa9inTH_pvgT10au1NV6whPmTDsa4JmCs2yOwK8_6NpUlfq5wgFnE-izTwoPSTb6IOzUN5mJXWLLL_4dhKR9S6tVA_uEVJk"_blank">IMPORMAL NA SEKTOR</a>
+      </div>
+
+      <div class="flashcard">
+      <img src="5.jpg" alt="g">
+      <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1soQfG4htWTEQfAXGpV7GjQ0Q7WwXGYaffePU6e4-1do%2Fedit%3Fusp%3Ddrivesdk&h=AT7sTubuBt8ZiwUA6Ff4Isn3y_6h_PfbyVvAWVsNXRYz3z74H5asDHRZfHKYrH0pwzTfuCeeU-lHtD0tJX-3FldhKYTDL_0sEhZwj_OhStwahDQ5HOJ3YfjYeegGCmRXMT_jpA" target="_blank">KALAKALANG PANLABAS</a>
+      </div>
+
+  </div>
+  </section>
+
+  <footer>
+  <p>(:THANK YOU FOR COMING:)</p>
+  </footer>
+</body>
+</html>
+
